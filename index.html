@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization with Tableau - Your Host: Dr. Shay Tsaban 📊</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            animation: fadeIn 1s ease-in;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background: #2980b9;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.8s ease-out;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-top: 20px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        .date {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization with Tableau - Your Host: Dr. Shay Tsaban 📈✨</h1>
 
+        <div class="section">
+            <h2>Course Overview 🌟</h2>
+            <p>Welcome to "Data Visualization with Tableau"! This course will guide you through the art and science of transforming raw data into insightful, interactive visualizations using Tableau. Perfect for beginners and intermediate learners, we'll cover installation, basic graphs, and advanced techniques to bring your data to life! 🚀</p>
+        </div>
+
+        <div class="section">
+            <h2>Get Started - Install Tableau 📊</h2>
+            <p>To begin, you’ll need Tableau Public installed on your device. Download it <a href="https://public.tableau.com/en-us/s/" target="_blank">here</a> and follow the installation instructions. This software is essential for all course activities! ⚙️</p>
+        </div>
+
+        <div class="section">
+            <h2>Course Materials 📝</h2>
+            <p>All course materials, including notes and resources, are centralized here for your convenience:</p>
+            <a href="https://github.com/shaytsaban/VizuBus/raw/main/CourseNotes%20-%202025%20B%20-%20Vizu%20Bus.docx" class="btn">Course Notes 📚</a>
+        </div>
+
+        <div class="section">
+            <h2>Data Files 🎮</h2>
+            <p>The primary dataset for this course is "vgsales.csv," which we’ll explore and visualize together. Additional files will be added as we progress!</p>
+            <a href="https://github.com/shaytsaban/VizuBus/raw/main/vgsales.csv" class="btn">VG Sales Data 📈</a>
+        </div>
+
+        <div class="section">
+            <h2>Lecture 1 - The Basics of Tableau - Installation and Basic Graphs 🎥</h2>
+            <p class="date">Date: 4.3.2025 📅</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/egLwlf-I8fY" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Created by Dr. Shay Tsaban 👨‍🏫</p>
+            <p>Email: <a href="mailto:shay.tsaban@gmail.com">shay.tsaban@gmail.com</a> 📧</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple scroll animation
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                const top = section.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
